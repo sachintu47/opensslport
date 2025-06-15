@@ -30,6 +30,11 @@ export ZOPEN_EXTRA_CPPFLAGS="${ZOPEN_EXTRA_CPPFLAGS} -DNI_MAXSERV=32 -DNI_MAXHOS
 export LDLIBS="${ZOPEN_EXTRA_LIBS}"
 export ZOPEN_COMP=clang
 
+zopen_init()
+{
+  env
+}
+
 zopen_append_to_env()
 {
 cat <<ZZ
